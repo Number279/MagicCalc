@@ -122,4 +122,64 @@ public class Calculator {
 
 
     }
+    public static class Divide {
+        public double int1;
+        public double int2;
+
+        public Divide() {
+        };
+
+        public Divide(double int1, double int2) {
+            this.int1 = int1;
+            this.int2 = int2;
+        }
+
+        public double getInt1() {
+            return int1;
+        }
+
+        public void setInt1(double int1) {
+            this.int1 = int1;
+        }
+
+        public double getInt2() {
+            return int2;
+        }
+
+        public void setInt2(double int2) {
+            this.int2 = int2;
+        }
+
+        public static double divNum(double int1, double int2) {
+            return int1 / int2;
+        }
+
+
+    }
+
+    public static class Power {
+        public double int1;
+        public double int2;
+
+        public Power() {
+        };
+
+        public Power(double int1) {
+            this.int1 = int1;
+        }
+
+        public double getInt1() {
+            return int1;
+        }
+
+        public void setInt1(double int1) {
+            this.int1 = int1;
+        }
+
+        public static double powNum(double int1) {
+            return Math.pow(int1, 2);
+        }
+
+
+    }
 }
