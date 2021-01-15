@@ -14,35 +14,44 @@ public class Main {
         double ans1 = sc.nextDouble();
         System.out.println("Enter another number: ");
         double ans2 = sc.nextDouble();
-        System.out.println("Please enter the calculator function you would like to use.");
-        System.out.println("\n+ for add, - for subtract, * for multiply, / for divide, or sq for square (1st input given)");
-        String mathFunc = sc.next();
+        int o = 6;
+        while(o > 5) {
+            System.out.println("Please enter the calculator function you would like to use.");
+            System.out.println("\n+ for add, - for subtract, * for multiply, / for divide, or sq for square (1st input given)");
+            String mathFunc = sc.next();
 
-        String a = mathFunc;
-        switch (a){
-            case "+":
-                System.out.format("   %.2f%n + %.2f%n = " + Calculator.Add.addNum(ans1,ans2), ans1, ans2);
-                x=4;
-                break;
-            case "-":
-                System.out.format("   %.2f%n - %.2f%n = " + Calculator.Subtract.subNum(ans1,ans2), ans1, ans2);
-                x=4;
-                break;
-            case "*":
-                System.out.format("   %.2f%n x %.2f%n = " + Calculator.Multiply.multNum(ans1,ans2), ans1, ans2);
-                x=4;
-                break;
-            case "/":
-                System.out.format("   %.2f%n / %.2f%n = " + Calculator.Divide.divNum(ans1,ans2), ans1, ans2);
-                x=4;
-                break;
-            case "sq":
-                System.out.format("%.2f squared = " +  Calculator.Power.powNum(ans1), ans1);
-                x=4;
-                break;
-            default:
-                System.out.println("Please enter a valid operator.");
-                break;
+            String a = mathFunc;
+            switch (a) {
+                case "+":
+                    System.out.format("   %.2f%n + %.2f%n = " + Calculator.Add.addNum(ans1, ans2), ans1, ans2);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "-":
+                    System.out.format("   %.2f%n - %.2f%n = " + Calculator.Subtract.subNum(ans1, ans2), ans1, ans2);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "*":
+                    System.out.format("   %.2f%n x %.2f%n = " + Calculator.Multiply.multNum(ans1, ans2), ans1, ans2);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "/":
+                    System.out.format("   %.2f%n / %.2f%n = " + Calculator.Divide.divNum(ans1, ans2), ans1, ans2);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "sq":
+                    System.out.format("%.2f squared = " + Calculator.Power.powNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                default:
+                    System.out.println("Please enter a valid operator.");
+                    o = 9;
+                    break;
+            }
         }
             int y = 6;
             while(y>5) {
