@@ -33,7 +33,7 @@ public class Main {
                 x=4;
                 break;
             case "/":
-                System.out.format("   %.2f%n x %.2f%n = " + Calculator.Divide.divNum(ans1,ans2), ans1, ans2);
+                System.out.format("   %.2f%n / %.2f%n = " + Calculator.Divide.divNum(ans1,ans2), ans1, ans2);
                 x=4;
                 break;
             case "sq":
