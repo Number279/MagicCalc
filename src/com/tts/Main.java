@@ -12,12 +12,17 @@ public class Main {
         while (x > 5) {
         System.out.println("Enter the first number: ");
         double ans1 = sc.nextDouble();
-        System.out.println("Enter another number: ");
+        System.out.println("Enter the second number: ");
         double ans2 = sc.nextDouble();
         int o = 6;
         while(o > 5) {
-            System.out.println("Please enter the calculator function you would like to use.");
-            System.out.println("\n+ for add, - for subtract, * for multiply, / for divide, or sq for square (1st input given)");
+            System.out.println("\nPlease enter the calculator function you would like to use:");
+            System.out.println("\n+ for add, - for subtract, * for multiply, / for divide, ! for 1st number's factorial, or");
+            System.out.println("sq for the first number squared,");
+            System.out.println("root for the square root of the first number.");
+            System.out.println("sin for sine of the first number.");
+            System.out.println("cosin for cosine of the first number.");
+            System.out.println("tan for the tangent of the first number.");
             String mathFunc = sc.next();
 
             String a = mathFunc;
@@ -44,6 +49,31 @@ public class Main {
                     break;
                 case "sq":
                     System.out.format("%.2f squared = " + Calculator.Power.powNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "root":
+                    System.out.format("The square root of %.2f  = " + Calculator.SqRoot.srNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "sin":
+                    System.out.format("The sin of %.2f  = " + Calculator.Sin.sinNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "cosin":
+                    System.out.format("The cosin of %.2f  = " + Calculator.Cosin.cosinNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "tan":
+                    System.out.format("The tan of %.2f  = " + Calculator.Tangent.tanNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "!":
+                    System.out.format("The factorial of %.2f  = " + Calculator.Factorial.facNum(ans1), ans1);
                     x = 4;
                     o = 4;
                     break;
