@@ -23,6 +23,10 @@ public class Main {
             System.out.println("sin for sine of the first number.");
             System.out.println("cosin for cosine of the first number.");
             System.out.println("tan for the tangent of the first number.");
+            System.out.println("pi for the first number multiplied by pi.");
+            System.out.println("ln for the natural logarithm of the first number.");
+            System.out.println("log for the log() of the first number");
+
             String mathFunc = sc.next();
 
             String a = mathFunc;
@@ -58,22 +62,37 @@ public class Main {
                     o = 4;
                     break;
                 case "sin":
-                    System.out.format("The sin of %.2f  = " + Calculator.Sin.sinNum(ans1), ans1);
+                    System.out.format("The sin of %.2f degrees = " + Calculator.Sin.sinNum(ans1), ans1);
                     x = 4;
                     o = 4;
                     break;
                 case "cosin":
-                    System.out.format("The cosin of %.2f  = " + Calculator.Cosin.cosinNum(ans1), ans1);
+                    System.out.format("The cosin of %.2f degrees = " + Calculator.Cosin.cosinNum(ans1), ans1);
                     x = 4;
                     o = 4;
                     break;
                 case "tan":
-                    System.out.format("The tan of %.2f  = " + Calculator.Tangent.tanNum(ans1), ans1);
+                    System.out.format("The tan of %.2f degrees = " + Calculator.Tangent.tanNum(ans1), ans1);
                     x = 4;
                     o = 4;
                     break;
                 case "!":
                     System.out.format("The factorial of %.2f  = " + Calculator.Factorial.facNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "pi":
+                    System.out.format("Pi( %.2f ) = " + Calculator.Pi.piNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "ln":
+                    System.out.format("Ln( %.2f ) = " + Calculator.Ln.lnNum(ans1), ans1);
+                    x = 4;
+                    o = 4;
+                    break;
+                case "log":
+                    System.out.format("Log( %.2f ) = " + Calculator.Log.logNum(ans1), ans1);
                     x = 4;
                     o = 4;
                     break;
